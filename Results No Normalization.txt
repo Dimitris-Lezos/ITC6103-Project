@@ -1,0 +1,423 @@
+NO NORMALIZATION
+========================
+"C:\Users\dlezo\OneDrive - The American College of Greece\Python\ITC6103\venv\Scripts\python.exe" "C:\Users\dlezo\OneDrive - The American College of Greece\Python\ITC6103\Project\RegressionZirconia.py" 
+          Count  Unique  Unique Percent  Null Count  Null Percent Data Type
+id       193573  193573          100.00           0           0.0     int64
+carat    193573     248            0.13           0           0.0   float64
+cut      193573       5            0.00           0           0.0    object
+color    193573       7            0.00           0           0.0    object
+clarity  193573       8            0.00           0           0.0    object
+depth    193573     153            0.08           0           0.0   float64
+table    193573     108            0.06           0           0.0   float64
+x        193573     522            0.27           0           0.0   float64
+y        193573     521            0.27           0           0.0   float64
+z        193573     349            0.18           0           0.0   float64
+price    193573    8738            4.51           0           0.0     int64
+                  id          carat  ...              z          price
+count  193573.000000  193573.000000  ...  193573.000000  193573.000000
+mean    96786.000000       0.790688  ...       3.534246    3969.155414
+std     55879.856166       0.462688  ...       0.688922    4034.374138
+min         0.000000       0.200000  ...       0.000000     326.000000
+25%     48393.000000       0.400000  ...       2.900000     951.000000
+50%     96786.000000       0.700000  ...       3.530000    2401.000000
+75%    145179.000000       1.030000  ...       4.030000    5408.000000
+max    193572.000000       3.500000  ...      31.300000   18818.000000
+
+[8 rows x 8 columns]
+Duplicates: Series([], dtype: bool)
+cut
+4.0    0.476417
+3.0    0.259459
+2.0    0.193386
+1.0    0.060184
+0.0    0.010553
+Name: proportion, dtype: float64 cut
+4.0    0.480421
+3.0    0.254047
+2.0    0.195654
+1.0    0.059702
+0.0    0.010177
+Name: proportion, dtype: float64
+color
+3.0    0.228360
+5.0    0.185357
+4.0    0.177430
+2.0    0.159549
+6.0    0.124508
+1.0    0.091247
+0.0    0.033550
+Name: proportion, dtype: float64 color
+3.0    0.231575
+5.0    0.185167
+4.0    0.175920
+2.0    0.158080
+6.0    0.127686
+1.0    0.088683
+0.0    0.032890
+Name: proportion, dtype: float64
+clarity
+4.0    0.275548
+5.0    0.248581
+6.0    0.157689
+3.0    0.157578
+7.0    0.081475
+8.0    0.054752
+9.0    0.021668
+2.0    0.002708
+Name: proportion, dtype: float64 clarity
+4.0    0.274401
+5.0    0.247004
+6.0    0.160180
+3.0    0.157253
+7.0    0.081313
+8.0    0.055259
+9.0    0.022093
+2.0    0.002497
+Name: proportion, dtype: float64
+------------------------
+Linear Regression column 'carat' MSE= 1789347.48 (* Mean Square Error)
+Linear Regression column 'carat' MAE= 946.39 (* Mean Absolute Error)
+Linear Regression column 'carat'  R2= 0.8892656060475708
+------------------------
+Linear Regression column 'cut' MSE= 16037295.85 (* Mean Square Error)
+Linear Regression column 'cut' MAE= 3040.68 (* Mean Absolute Error)
+Linear Regression column 'cut'  R2= 0.007526345295969072
+------------------------
+Linear Regression column 'color' MSE= 15434763.74 (* Mean Square Error)
+Linear Regression column 'color' MAE= 2961.09 (* Mean Absolute Error)
+Linear Regression column 'color'  R2= 0.04481425512190307
+------------------------
+Linear Regression column 'clarity' MSE= 15628591.77 (* Mean Square Error)
+Linear Regression column 'clarity' MAE= 2952.41 (* Mean Absolute Error)
+Linear Regression column 'clarity'  R2= 0.032819139833663025
+------------------------
+Linear Regression column 'depth' MSE= 16159476.41 (* Mean Square Error)
+Linear Regression column 'depth' MAE= 3067.19 (* Mean Absolute Error)
+Linear Regression column 'depth'  R2= -3.484156771138558e-05
+------------------------
+Linear Regression column 'table' MSE= 15663665.96 (* Mean Square Error)
+Linear Regression column 'table' MAE= 2987.48 (* Mean Absolute Error)
+Linear Regression column 'table'  R2= 0.03064856146419903
+------------------------
+Linear Regression MSE= 1214741.88 (* Mean Square Error)
+Linear Regression MAE= 808.84 (* Mean Absolute Error)
+Linear Regression  R2= 0.9248252745560208
+------------------------
+Polynomial Regression degree=2 column 'carat' MSE= 1559206.18 (* Mean Square Error)
+Polynomial Regression degree=2 column 'carat' MAE= 755.83 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'carat'  R2= 0.9035079808668178
+------------------------
+Polynomial Regression degree=2 column 'cut' MSE= 15939115.61 (* Mean Square Error)
+Polynomial Regression degree=2 column 'cut' MAE= 3016.19 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'cut'  R2= 0.013602263518246782
+------------------------
+Polynomial Regression degree=2 column 'color' MSE= 15419679.39 (* Mean Square Error)
+Polynomial Regression degree=2 column 'color' MAE= 2960.48 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'color'  R2= 0.04574775550449062
+------------------------
+Polynomial Regression degree=2 column 'clarity' MSE= 15626762.35 (* Mean Square Error)
+Polynomial Regression degree=2 column 'clarity' MAE= 2950.58 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'clarity'  R2= 0.03293235459001975
+------------------------
+Polynomial Regression degree=2 column 'depth' MSE= 16117472.06 (* Mean Square Error)
+Polynomial Regression degree=2 column 'depth' MAE= 3062.27 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'depth'  R2= 0.00256461228870708
+------------------------
+Polynomial Regression degree=2 column 'table' MSE= 15606282.7 (* Mean Square Error)
+Polynomial Regression degree=2 column 'table' MAE= 2969.57 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'table'  R2= 0.03419974434377537
+------------------------
+Polynomial Regression degree=2 MSE= 580726.5 (* Mean Square Error)
+Polynomial Regression degree=2 MAE= 470.94 (* Mean Absolute Error)
+Polynomial Regression degree=2  R2= 0.9640615378541652
+------------------------
+Polynomial Regression degree=3 MSE= 428893.15 (* Mean Square Error)
+Polynomial Regression degree=3 MAE= 366.37 (* Mean Absolute Error)
+Polynomial Regression degree=3  R2= 0.9734577977141005
+------------------------
+Polynomial Regression degree=4 MSE= 403862.11 (* Mean Square Error)
+Polynomial Regression degree=4 MAE= 347.55 (* Mean Absolute Error)
+Polynomial Regression degree=4  R2= 0.9750068521179343
+------------------------
+Polynomial Regression degree=5 MSE= 391896.98 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.41 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9757473186729442
+------------------------
+Polynomial Regression degree=6 MSE= 440654.06 (* Mean Square Error)
+Polynomial Regression degree=6 MAE= 336.65 (* Mean Absolute Error)
+Polynomial Regression degree=6  R2= 0.972729969807326
+------------------------
+Polynomial Regression degree=7 MSE= 2015983.78 (* Mean Square Error)
+Polynomial Regression degree=7 MAE= 339.57 (* Mean Absolute Error)
+Polynomial Regression degree=7  R2= 0.8752401396990717
+------------------------
+Polynomial Regression degree=2['carat', 'cut', 'color', 'clarity', 'table'] MSE= 582953.7 (* Mean Square Error)
+Polynomial Regression degree=2['carat', 'cut', 'color', 'clarity', 'table'] MAE= 471.18 (* Mean Absolute Error)
+Polynomial Regression degree=2['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.9639237068357601
+------------------------
+Polynomial Regression degree=3['carat', 'cut', 'color', 'clarity', 'table'] MSE= 430568.48 (* Mean Square Error)
+Polynomial Regression degree=3['carat', 'cut', 'color', 'clarity', 'table'] MAE= 367.39 (* Mean Absolute Error)
+Polynomial Regression degree=3['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.9733541193571722
+------------------------
+Polynomial Regression degree=4['carat', 'cut', 'color', 'clarity', 'table'] MSE= 404643.11 (* Mean Square Error)
+Polynomial Regression degree=4['carat', 'cut', 'color', 'clarity', 'table'] MAE= 348.12 (* Mean Absolute Error)
+Polynomial Regression degree=4['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.9749585195577423
+------------------------
+Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table'] MSE= 387889.55 (* Mean Square Error)
+Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table'] MAE= 338.35 (* Mean Absolute Error)
+Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.975995319428491
+------------------------
+Polynomial Regression degree=6['carat', 'cut', 'color', 'clarity', 'table'] MSE= 397729.07 (* Mean Square Error)
+Polynomial Regression degree=6['carat', 'cut', 'color', 'clarity', 'table'] MAE= 334.05 (* Mean Absolute Error)
+Polynomial Regression degree=6['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.9753863973696996
+------------------------
+Polynomial Regression degree=7['carat', 'cut', 'color', 'clarity', 'table'] MSE= 404505.27 (* Mean Square Error)
+Polynomial Regression degree=7['carat', 'cut', 'color', 'clarity', 'table'] MAE= 327.61 (* Mean Absolute Error)
+Polynomial Regression degree=7['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.9749670500895568
+------------------------
+Polynomial Regression degree=2['carat', 'color', 'clarity', 'table'] MSE= 594355.38 (* Mean Square Error)
+Polynomial Regression degree=2['carat', 'color', 'clarity', 'table'] MAE= 474.81 (* Mean Absolute Error)
+Polynomial Regression degree=2['carat', 'color', 'clarity', 'table']  R2= 0.9632181097087031
+------------------------
+Polynomial Regression degree=3['carat', 'color', 'clarity', 'table'] MSE= 441349.46 (* Mean Square Error)
+Polynomial Regression degree=3['carat', 'color', 'clarity', 'table'] MAE= 370.82 (* Mean Absolute Error)
+Polynomial Regression degree=3['carat', 'color', 'clarity', 'table']  R2= 0.9726869342897134
+------------------------
+Polynomial Regression degree=4['carat', 'color', 'clarity', 'table'] MSE= 418907.25 (* Mean Square Error)
+Polynomial Regression degree=4['carat', 'color', 'clarity', 'table'] MAE= 352.65 (* Mean Absolute Error)
+Polynomial Regression degree=4['carat', 'color', 'clarity', 'table']  R2= 0.9740757784823411
+------------------------
+Polynomial Regression degree=5['carat', 'color', 'clarity', 'table'] MSE= 420220.76 (* Mean Square Error)
+Polynomial Regression degree=5['carat', 'color', 'clarity', 'table'] MAE= 345.74 (* Mean Absolute Error)
+Polynomial Regression degree=5['carat', 'color', 'clarity', 'table']  R2= 0.9739944915760465
+------------------------
+Polynomial Regression degree=6['carat', 'color', 'clarity', 'table'] MSE= 434258.13 (* Mean Square Error)
+Polynomial Regression degree=6['carat', 'color', 'clarity', 'table'] MAE= 338.3 (* Mean Absolute Error)
+Polynomial Regression degree=6['carat', 'color', 'clarity', 'table']  R2= 0.9731257838417141
+------------------------
+Polynomial Regression degree=7['carat', 'color', 'clarity', 'table'] MSE= 565319.64 (* Mean Square Error)
+Polynomial Regression degree=7['carat', 'color', 'clarity', 'table'] MAE= 333.79 (* Mean Absolute Error)
+Polynomial Regression degree=7['carat', 'color', 'clarity', 'table']  R2= 0.9650149965737571
+------------------------
+Polynomial Regression degree=2['carat', 'color', 'clarity'] MSE= 599410.11 (* Mean Square Error)
+Polynomial Regression degree=2['carat', 'color', 'clarity'] MAE= 476.56 (* Mean Absolute Error)
+Polynomial Regression degree=2['carat', 'color', 'clarity']  R2= 0.9629052959777588
+------------------------
+Polynomial Regression degree=3['carat', 'color', 'clarity'] MSE= 445752.37 (* Mean Square Error)
+Polynomial Regression degree=3['carat', 'color', 'clarity'] MAE= 373.1 (* Mean Absolute Error)
+Polynomial Regression degree=3['carat', 'color', 'clarity']  R2= 0.9724144587787948
+------------------------
+Polynomial Regression degree=4['carat', 'color', 'clarity'] MSE= 420984.1 (* Mean Square Error)
+Polynomial Regression degree=4['carat', 'color', 'clarity'] MAE= 354.61 (* Mean Absolute Error)
+Polynomial Regression degree=4['carat', 'color', 'clarity']  R2= 0.9739472518507177
+------------------------
+Polynomial Regression degree=5['carat', 'color', 'clarity'] MSE= 402397.52 (* Mean Square Error)
+Polynomial Regression degree=5['carat', 'color', 'clarity'] MAE= 346.87 (* Mean Absolute Error)
+Polynomial Regression degree=5['carat', 'color', 'clarity']  R2= 0.9750974891868881
+------------------------
+Polynomial Regression degree=6['carat', 'color', 'clarity'] MSE= 389176.35 (* Mean Square Error)
+Polynomial Regression degree=6['carat', 'color', 'clarity'] MAE= 339.13 (* Mean Absolute Error)
+Polynomial Regression degree=6['carat', 'color', 'clarity']  R2= 0.9759156859017475
+------------------------
+Polynomial Regression degree=7['carat', 'color', 'clarity'] MSE= 423734.98 (* Mean Square Error)
+Polynomial Regression degree=7['carat', 'color', 'clarity'] MAE= 332.85 (* Mean Absolute Error)
+Polynomial Regression degree=7['carat', 'color', 'clarity']  R2= 0.973777013019496
+------------------------
+Polynomial Regression degree=2['carat', 'color'] MSE= 1320310.86 (* Mean Square Error)
+Polynomial Regression degree=2['carat', 'color'] MAE= 709.03 (* Mean Absolute Error)
+Polynomial Regression degree=2['carat', 'color']  R2= 0.9182921016189747
+------------------------
+Polynomial Regression degree=3['carat', 'color'] MSE= 1118057.99 (* Mean Square Error)
+Polynomial Regression degree=3['carat', 'color'] MAE= 623.3 (* Mean Absolute Error)
+Polynomial Regression degree=3['carat', 'color']  R2= 0.9308085907168779
+------------------------
+Polynomial Regression degree=4['carat', 'color'] MSE= 1098872.98 (* Mean Square Error)
+Polynomial Regression degree=4['carat', 'color'] MAE= 614.47 (* Mean Absolute Error)
+Polynomial Regression degree=4['carat', 'color']  R2= 0.9319958620366586
+------------------------
+Polynomial Regression degree=5['carat', 'color'] MSE= 1069897.03 (* Mean Square Error)
+Polynomial Regression degree=5['carat', 'color'] MAE= 598.55 (* Mean Absolute Error)
+Polynomial Regression degree=5['carat', 'color']  R2= 0.9337890488091415
+------------------------
+Polynomial Regression degree=6['carat', 'color'] MSE= 1055820.84 (* Mean Square Error)
+Polynomial Regression degree=6['carat', 'color'] MAE= 593.18 (* Mean Absolute Error)
+Polynomial Regression degree=6['carat', 'color']  R2= 0.9346601583903412
+------------------------
+Polynomial Regression degree=7['carat', 'color'] MSE= 1047086.94 (* Mean Square Error)
+Polynomial Regression degree=7['carat', 'color'] MAE= 586.39 (* Mean Absolute Error)
+Polynomial Regression degree=7['carat', 'color']  R2= 0.935200658733451
+------------------------
+Polynomial Regression degree=2['carat'] MSE= 1559206.18 (* Mean Square Error)
+Polynomial Regression degree=2['carat'] MAE= 755.83 (* Mean Absolute Error)
+Polynomial Regression degree=2['carat']  R2= 0.9035079808668178
+------------------------
+Polynomial Regression degree=3['carat'] MSE= 1387575.99 (* Mean Square Error)
+Polynomial Regression degree=3['carat'] MAE= 687.76 (* Mean Absolute Error)
+Polynomial Regression degree=3['carat']  R2= 0.9141293749669493
+------------------------
+Polynomial Regression degree=4['carat'] MSE= 1385923.55 (* Mean Square Error)
+Polynomial Regression degree=4['carat'] MAE= 685.09 (* Mean Absolute Error)
+Polynomial Regression degree=4['carat']  R2= 0.9142316371906305
+------------------------
+Polynomial Regression degree=5['carat'] MSE= 1376505.37 (* Mean Square Error)
+Polynomial Regression degree=5['carat'] MAE= 677.4 (* Mean Absolute Error)
+Polynomial Regression degree=5['carat']  R2= 0.914814484143414
+------------------------
+Polynomial Regression degree=6['carat'] MSE= 1376140.54 (* Mean Square Error)
+Polynomial Regression degree=6['carat'] MAE= 677.16 (* Mean Absolute Error)
+Polynomial Regression degree=6['carat']  R2= 0.9148370617762126
+------------------------
+Polynomial Regression degree=7['carat'] MSE= 1375477.46 (* Mean Square Error)
+Polynomial Regression degree=7['carat'] MAE= 677.35 (* Mean Absolute Error)
+Polynomial Regression degree=7['carat']  R2= 0.9148780972878809
+------------------------
+Neural Network Regression MSE= 637121.89 (* Mean Square Error)
+Neural Network Regression MAE= 422.72 (* Mean Absolute Error)
+Neural Network Regression  R2= 0.9605714892602705
+
+------------------------
+Ridge Regression degree=4 MSE= 404795.0 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 347.67 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.9749491200741273
+------------------------
+Ridge Regression degree=5 MSE= 387669.94 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 337.78 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9760089104575306
+------------------------
+Ridge Regression degree=6 MSE= 387852.78 (* Mean Square Error)
+Ridge Regression degree=6 MAE= 334.56 (* Mean Absolute Error)
+Ridge Regression degree=6  R2= 0.9759975950718646
+------------------------
+Lasso Regression degree=4 MSE= 422590.55 (* Mean Square Error)
+Lasso Regression degree=4 MAE= 362.6 (* Mean Absolute Error)
+Lasso Regression degree=4  R2= 0.9738478364282858
+------------------------
+Lasso Regression degree=5 MSE= 406127.34 (* Mean Square Error)
+Lasso Regression degree=5 MAE= 349.22 (* Mean Absolute Error)
+Lasso Regression degree=5  R2= 0.9748666677333194
+------------------------
+Best of class: Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']
+------------------------
+Ridge Regression degree=5 MSE= 387370.57 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 338.29 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9760274368062535
+------------------------
+Best of class: Helmert Encoding, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']
+------------------------
+Ridge Regression degree=3 MSE= 417412.44 (* Mean Square Error)
+Ridge Regression degree=3 MAE= 360.81 (* Mean Absolute Error)
+Ridge Regression degree=3  R2= 0.9741682853286916
+------------------------
+Ridge Regression degree=4 MSE= 451047.2 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 342.0 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.9720867862864822
+------------------------
+Best of class: Price/Carat Encoding, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']
+------------------------
+Ridge Regression degree=5 MSE= 1095414.7 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 640.42 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9322098784830964
+------------------------
+Best of class: Price/Carat Value, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']
+------------------------
+Ridge Regression degree=5 MSE= 279908.85 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 346.72 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9282333079876706
+===========================================
+PCA but done wrong:
+------------------------
+PCA 5 , Ridge, Polynomial Regression
+pca.explained_variance_ratio_ [0.38422272 0.24942012 0.19122375 0.11811873 0.04266431]
+------------------------
+Ridge Regression degree=2 MSE= 13961133.56 (* Mean Square Error)
+Ridge Regression degree=2 MAE= 2726.66 (* Mean Absolute Error)
+Ridge Regression degree=2  R2= 0.13601037391593374
+------------------------
+Ridge Regression degree=3 MSE= 14088647.42 (* Mean Square Error)
+Ridge Regression degree=3 MAE= 2712.6 (* Mean Absolute Error)
+Ridge Regression degree=3  R2= 0.12811913421222776
+------------------------
+Ridge Regression degree=4 MSE= 13869475.79 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 2698.33 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.1416826466051233
+------------------------
+Ridge Regression degree=5 MSE= 9988409.39 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 1978.45 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.38186379644653856
+------------------------
+PCA 4 , Ridge, Polynomial Regression
+pca.explained_variance_ratio_ [0.38422272 0.24942012 0.19122375 0.11811873]
+------------------------
+Ridge Regression degree=2 MSE= 14049447.67 (* Mean Square Error)
+Ridge Regression degree=2 MAE= 2736.08 (* Mean Absolute Error)
+Ridge Regression degree=2  R2= 0.13054502436755
+------------------------
+Ridge Regression degree=3 MSE= 13979783.55 (* Mean Square Error)
+Ridge Regression degree=3 MAE= 2724.66 (* Mean Absolute Error)
+Ridge Regression degree=3  R2= 0.13485621233710088
+------------------------
+Ridge Regression degree=4 MSE= 13908581.41 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 2711.17 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.13926258216984266
+------------------------
+Ridge Regression degree=5 MSE= 14012928.57 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 2707.23 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.13280502158162988
+------------------------
+PCA 3 , Ridge, Polynomial Regression, ['carat', 'cut', 'color', 'clarity', 'table']
+pca.explained_variance_ratio_ [0.38422272 0.24942012 0.19122375]
+------------------------
+Ridge Regression degree=2 MSE= 14135744.03 (* Mean Square Error)
+Ridge Regression degree=2 MAE= 2743.55 (* Mean Absolute Error)
+Ridge Regression degree=2  R2= 0.12520454403536518
+------------------------
+Ridge Regression degree=3 MSE= 14093199.48 (* Mean Square Error)
+Ridge Regression degree=3 MAE= 2730.33 (* Mean Absolute Error)
+Ridge Regression degree=3  R2= 0.1278374281761513
+------------------------
+Ridge Regression degree=4 MSE= 14121822.92 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 2725.64 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.12606605678304084
+------------------------
+Ridge Regression degree=5 MSE= 14512515.93 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 2720.62 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.10188788300327623
+------------------------
+PCA 2 , Ridge, Polynomial Regression, ['carat', 'cut', 'color', 'clarity', 'table']
+pca.explained_variance_ratio_ [0.38422272 0.24942012]
+------------------------
+Ridge Regression degree=2 MSE= 14785103.28 (* Mean Square Error)
+Ridge Regression degree=2 MAE= 2845.94 (* Mean Absolute Error)
+Ridge Regression degree=2  R2= 0.08501872001432054
+------------------------
+Ridge Regression degree=3 MSE= 14734821.76 (* Mean Square Error)
+Ridge Regression degree=3 MAE= 2833.85 (* Mean Absolute Error)
+Ridge Regression degree=3  R2= 0.08813040917728332
+------------------------
+Ridge Regression degree=4 MSE= 14856835.21 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 2830.13 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.080579564075004
+------------------------
+Ridge Regression degree=5 MSE= 15016107.24 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 2829.07 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.070722959168659
+------------------------
+PCA 1 , Ridge, Polynomial Regression, ['carat', 'cut', 'color', 'clarity', 'table']
+pca.explained_variance_ratio_ [0.38422272]
+------------------------
+Ridge Regression degree=2 MSE= 15289340.04 (* Mean Square Error)
+Ridge Regression degree=2 MAE= 2906.88 (* Mean Absolute Error)
+Ridge Regression degree=2  R2= 0.05381385186584653
+------------------------
+Ridge Regression degree=3 MSE= 15298868.25 (* Mean Square Error)
+Ridge Regression degree=3 MAE= 2908.16 (* Mean Absolute Error)
+Ridge Regression degree=3  R2= 0.053224195195341384
+------------------------
+Ridge Regression degree=4 MSE= 15416485.52 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 2904.89 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.04594540909243927
+------------------------
+Ridge Regression degree=5 MSE= 15717936.37 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 2907.22 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.027290018094347945
+------------------------
