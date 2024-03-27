@@ -28,6 +28,10 @@ Best of class: Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'c
 Ridge Regression degree=5 MSE= 387370.57 (* Mean Square Error)
 Ridge Regression degree=5 MAE= 338.29 (* Mean Absolute Error)
 Ridge Regression degree=5  R2= 0.9760274368062535
+------------------------
+Polynomial Regression degree=5 MSE= 391992.08 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.32 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9757414335135339
 ==================
 WITH NORMALIZATION
 ==================
@@ -69,4 +73,8 @@ Best of class: NO OUTLIERS, Ridge, Polynomial Regression degree=5['carat', 'cut'
 Ridge Regression degree=5 MSE= 410185.4 (* Mean Square Error)
 Ridge Regression degree=5 MAE= 350.6 (* Mean Absolute Error)
 Ridge Regression degree=5  R2= 0.9746155332487699
+------------------------
+Polynomial Regression degree=5 MSE= 391992.08 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.32 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9757414335136121
 

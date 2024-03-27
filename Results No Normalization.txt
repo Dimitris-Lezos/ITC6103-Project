@@ -323,101 +323,116 @@ Best of class: Price/Carat Value, Ridge, Polynomial Regression degree=5['carat',
 Ridge Regression degree=5 MSE= 279908.85 (* Mean Square Error)
 Ridge Regression degree=5 MAE= 346.72 (* Mean Absolute Error)
 Ridge Regression degree=5  R2= 0.9282333079876706
-===========================================
-PCA but done wrong:
 ------------------------
-PCA 5 , Ridge, Polynomial Regression
-pca.explained_variance_ratio_ [0.38422272 0.24942012 0.19122375 0.11811873 0.04266431]
+PCA, Ridge, Polynomial Regression: Backward Stepwise Polynomial regression
+pca.explained_variance_ratio_ [0.38422272 0.24942012 0.19122375 0.11811873 0.04266431 0.01435036]
 ------------------------
-Ridge Regression degree=2 MSE= 13961133.56 (* Mean Square Error)
-Ridge Regression degree=2 MAE= 2726.66 (* Mean Absolute Error)
-Ridge Regression degree=2  R2= 0.13601037391593374
+Polynomial Regression degree=2 MSE= 580726.5 (* Mean Square Error)
+Polynomial Regression degree=2 MAE= 470.94 (* Mean Absolute Error)
+Polynomial Regression degree=2  R2= 0.9640615378541648
 ------------------------
-Ridge Regression degree=3 MSE= 14088647.42 (* Mean Square Error)
-Ridge Regression degree=3 MAE= 2712.6 (* Mean Absolute Error)
-Ridge Regression degree=3  R2= 0.12811913421222776
+Polynomial Regression degree=3 MSE= 428893.15 (* Mean Square Error)
+Polynomial Regression degree=3 MAE= 366.37 (* Mean Absolute Error)
+Polynomial Regression degree=3  R2= 0.9734577977138473
 ------------------------
-Ridge Regression degree=4 MSE= 13869475.79 (* Mean Square Error)
-Ridge Regression degree=4 MAE= 2698.33 (* Mean Absolute Error)
-Ridge Regression degree=4  R2= 0.1416826466051233
+Polynomial Regression degree=4 MSE= 403862.11 (* Mean Square Error)
+Polynomial Regression degree=4 MAE= 347.55 (* Mean Absolute Error)
+Polynomial Regression degree=4  R2= 0.97500685229255
 ------------------------
-Ridge Regression degree=5 MSE= 9988409.39 (* Mean Square Error)
-Ridge Regression degree=5 MAE= 1978.45 (* Mean Absolute Error)
-Ridge Regression degree=5  R2= 0.38186379644653856
+Polynomial Regression degree=5 MSE= 391992.08 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.32 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9757414335135339
 ------------------------
-PCA 4 , Ridge, Polynomial Regression
-pca.explained_variance_ratio_ [0.38422272 0.24942012 0.19122375 0.11811873]
+Polynomial Regression degree=2[1, 2, 3, 4, 5] MSE= 1168418.74 (* Mean Square Error)
+Polynomial Regression degree=2[1, 2, 3, 4, 5] MAE= 779.6 (* Mean Absolute Error)
+Polynomial Regression degree=2[1, 2, 3, 4, 5]  R2= 0.9276919981855891
 ------------------------
-Ridge Regression degree=2 MSE= 14049447.67 (* Mean Square Error)
-Ridge Regression degree=2 MAE= 2736.08 (* Mean Absolute Error)
-Ridge Regression degree=2  R2= 0.13054502436755
+Polynomial Regression degree=3[1, 2, 3, 4, 5] MSE= 935251.31 (* Mean Square Error)
+Polynomial Regression degree=3[1, 2, 3, 4, 5] MAE= 659.38 (* Mean Absolute Error)
+Polynomial Regression degree=3[1, 2, 3, 4, 5]  R2= 0.942121646093042
 ------------------------
-Ridge Regression degree=3 MSE= 13979783.55 (* Mean Square Error)
-Ridge Regression degree=3 MAE= 2724.66 (* Mean Absolute Error)
-Ridge Regression degree=3  R2= 0.13485621233710088
+Polynomial Regression degree=4[1, 2, 3, 4, 5] MSE= 830484.78 (* Mean Square Error)
+Polynomial Regression degree=4[1, 2, 3, 4, 5] MAE= 622.85 (* Mean Absolute Error)
+Polynomial Regression degree=4[1, 2, 3, 4, 5]  R2= 0.9486051592937005
 ------------------------
-Ridge Regression degree=4 MSE= 13908581.41 (* Mean Square Error)
-Ridge Regression degree=4 MAE= 2711.17 (* Mean Absolute Error)
-Ridge Regression degree=4  R2= 0.13926258216984266
+Polynomial Regression degree=5[1, 2, 3, 4, 5] MSE= 3545726.02 (* Mean Square Error)
+Polynomial Regression degree=5[1, 2, 3, 4, 5] MAE= 615.4 (* Mean Absolute Error)
+Polynomial Regression degree=5[1, 2, 3, 4, 5]  R2= 0.7805715068428452
 ------------------------
-Ridge Regression degree=5 MSE= 14012928.57 (* Mean Square Error)
-Ridge Regression degree=5 MAE= 2707.23 (* Mean Absolute Error)
-Ridge Regression degree=5  R2= 0.13280502158162988
+Polynomial Regression degree=2[2, 3, 4, 5] MSE= 1472491.99 (* Mean Square Error)
+Polynomial Regression degree=2[2, 3, 4, 5] MAE= 895.02 (* Mean Absolute Error)
+Polynomial Regression degree=2[2, 3, 4, 5]  R2= 0.9088743189568828
 ------------------------
-PCA 3 , Ridge, Polynomial Regression, ['carat', 'cut', 'color', 'clarity', 'table']
-pca.explained_variance_ratio_ [0.38422272 0.24942012 0.19122375]
+Polynomial Regression degree=3[2, 3, 4, 5] MSE= 1261447.68 (* Mean Square Error)
+Polynomial Regression degree=3[2, 3, 4, 5] MAE= 790.42 (* Mean Absolute Error)
+Polynomial Regression degree=3[2, 3, 4, 5]  R2= 0.9219348696570935
 ------------------------
-Ridge Regression degree=2 MSE= 14135744.03 (* Mean Square Error)
-Ridge Regression degree=2 MAE= 2743.55 (* Mean Absolute Error)
-Ridge Regression degree=2  R2= 0.12520454403536518
+Polynomial Regression degree=4[2, 3, 4, 5] MSE= 1144997.38 (* Mean Square Error)
+Polynomial Regression degree=4[2, 3, 4, 5] MAE= 758.1 (* Mean Absolute Error)
+Polynomial Regression degree=4[2, 3, 4, 5]  R2= 0.9291414373592349
 ------------------------
-Ridge Regression degree=3 MSE= 14093199.48 (* Mean Square Error)
-Ridge Regression degree=3 MAE= 2730.33 (* Mean Absolute Error)
-Ridge Regression degree=3  R2= 0.1278374281761513
+Polynomial Regression degree=5[2, 3, 4, 5] MSE= 3201765.32 (* Mean Square Error)
+Polynomial Regression degree=5[2, 3, 4, 5] MAE= 753.33 (* Mean Absolute Error)
+Polynomial Regression degree=5[2, 3, 4, 5]  R2= 0.8018576350988915
 ------------------------
-Ridge Regression degree=4 MSE= 14121822.92 (* Mean Square Error)
-Ridge Regression degree=4 MAE= 2725.64 (* Mean Absolute Error)
-Ridge Regression degree=4  R2= 0.12606605678304084
+Polynomial Regression degree=2[3, 4, 5] MSE= 1923788.28 (* Mean Square Error)
+Polynomial Regression degree=2[3, 4, 5] MAE= 1038.22 (* Mean Absolute Error)
+Polynomial Regression degree=2[3, 4, 5]  R2= 0.8809456906125783
 ------------------------
-Ridge Regression degree=5 MSE= 14512515.93 (* Mean Square Error)
-Ridge Regression degree=5 MAE= 2720.62 (* Mean Absolute Error)
-Ridge Regression degree=5  R2= 0.10188788300327623
+Polynomial Regression degree=3[3, 4, 5] MSE= 1756321.48 (* Mean Square Error)
+Polynomial Regression degree=3[3, 4, 5] MAE= 984.32 (* Mean Absolute Error)
+Polynomial Regression degree=3[3, 4, 5]  R2= 0.8913094320605528
 ------------------------
-PCA 2 , Ridge, Polynomial Regression, ['carat', 'cut', 'color', 'clarity', 'table']
-pca.explained_variance_ratio_ [0.38422272 0.24942012]
+Polynomial Regression degree=4[3, 4, 5] MSE= 1627223.74 (* Mean Square Error)
+Polynomial Regression degree=4[3, 4, 5] MAE= 950.89 (* Mean Absolute Error)
+Polynomial Regression degree=4[3, 4, 5]  R2= 0.8992986905932423
 ------------------------
-Ridge Regression degree=2 MSE= 14785103.28 (* Mean Square Error)
-Ridge Regression degree=2 MAE= 2845.94 (* Mean Absolute Error)
-Ridge Regression degree=2  R2= 0.08501872001432054
+Polynomial Regression degree=5[3, 4, 5] MSE= 2991235.16 (* Mean Square Error)
+Polynomial Regression degree=5[3, 4, 5] MAE= 943.85 (* Mean Absolute Error)
+Polynomial Regression degree=5[3, 4, 5]  R2= 0.814886367525421
 ------------------------
-Ridge Regression degree=3 MSE= 14734821.76 (* Mean Square Error)
-Ridge Regression degree=3 MAE= 2833.85 (* Mean Absolute Error)
-Ridge Regression degree=3  R2= 0.08813040917728332
+Polynomial Regression degree=2[4, 5] MSE= 1986916.26 (* Mean Square Error)
+Polynomial Regression degree=2[4, 5] MAE= 1057.29 (* Mean Absolute Error)
+Polynomial Regression degree=2[4, 5]  R2= 0.8770389930705447
 ------------------------
-Ridge Regression degree=4 MSE= 14856835.21 (* Mean Square Error)
-Ridge Regression degree=4 MAE= 2830.13 (* Mean Absolute Error)
-Ridge Regression degree=4  R2= 0.080579564075004
+Polynomial Regression degree=3[4, 5] MSE= 1900610.12 (* Mean Square Error)
+Polynomial Regression degree=3[4, 5] MAE= 1025.32 (* Mean Absolute Error)
+Polynomial Regression degree=3[4, 5]  R2= 0.8823800792176103
 ------------------------
-Ridge Regression degree=5 MSE= 15016107.24 (* Mean Square Error)
-Ridge Regression degree=5 MAE= 2829.07 (* Mean Absolute Error)
-Ridge Regression degree=5  R2= 0.070722959168659
+Polynomial Regression degree=4[4, 5] MSE= 1882005.18 (* Mean Square Error)
+Polynomial Regression degree=4[4, 5] MAE= 1010.07 (* Mean Absolute Error)
+Polynomial Regression degree=4[4, 5]  R2= 0.8835314523216099
 ------------------------
-PCA 1 , Ridge, Polynomial Regression, ['carat', 'cut', 'color', 'clarity', 'table']
-pca.explained_variance_ratio_ [0.38422272]
+Polynomial Regression degree=5[4, 5] MSE= 2108850.26 (* Mean Square Error)
+Polynomial Regression degree=5[4, 5] MAE= 1014.06 (* Mean Absolute Error)
+Polynomial Regression degree=5[4, 5]  R2= 0.8694930650529684
 ------------------------
-Ridge Regression degree=2 MSE= 15289340.04 (* Mean Square Error)
-Ridge Regression degree=2 MAE= 2906.88 (* Mean Absolute Error)
-Ridge Regression degree=2  R2= 0.05381385186584653
+Polynomial Regression degree=2[5] MSE= 2059128.44 (* Mean Square Error)
+Polynomial Regression degree=2[5] MAE= 1075.43 (* Mean Absolute Error)
+Polynomial Regression degree=2[5]  R2= 0.8725701174173592
 ------------------------
-Ridge Regression degree=3 MSE= 15298868.25 (* Mean Square Error)
-Ridge Regression degree=3 MAE= 2908.16 (* Mean Absolute Error)
-Ridge Regression degree=3  R2= 0.053224195195341384
+Polynomial Regression degree=3[5] MSE= 1945214.74 (* Mean Square Error)
+Polynomial Regression degree=3[5] MAE= 1043.24 (* Mean Absolute Error)
+Polynomial Regression degree=3[5]  R2= 0.8796197064807056
 ------------------------
-Ridge Regression degree=4 MSE= 15416485.52 (* Mean Square Error)
-Ridge Regression degree=4 MAE= 2904.89 (* Mean Absolute Error)
-Ridge Regression degree=4  R2= 0.04594540909243927
+Polynomial Regression degree=4[5] MSE= 1863988.54 (* Mean Square Error)
+Polynomial Regression degree=4[5] MAE= 1030.43 (* Mean Absolute Error)
+Polynomial Regression degree=4[5]  R2= 0.8846464182129872
 ------------------------
-Ridge Regression degree=5 MSE= 15717936.37 (* Mean Square Error)
-Ridge Regression degree=5 MAE= 2907.22 (* Mean Absolute Error)
-Ridge Regression degree=5  R2= 0.027290018094347945
+Polynomial Regression degree=5[5] MSE= 1853236.52 (* Mean Square Error)
+Polynomial Regression degree=5[5] MAE= 1034.0 (* Mean Absolute Error)
+Polynomial Regression degree=5[5]  R2= 0.885311810519302
 ------------------------
+Best of class: Price/Carat, Ridge, Polynomial Regression degree=5['cut', 'color', 'clarity', 'table']
+------------------------
+Ridge Regression degree=3 MSE= 3725861.14 (* Mean Square Error)
+Ridge Regression degree=3 MAE= 1487.4 (* Mean Absolute Error)
+Ridge Regression degree=3  R2= 0.04471498651274319
+------------------------
+Ridge Regression degree=4 MSE= 3695123.72 (* Mean Square Error)
+Ridge Regression degree=4 MAE= 1481.79 (* Mean Absolute Error)
+Ridge Regression degree=4  R2= 0.052595847653300165
+------------------------
+Ridge Regression degree=5 MSE= 3774797.8 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 1477.69 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.03216796607461625

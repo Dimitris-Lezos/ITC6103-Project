@@ -353,7 +353,7 @@ def encode_ordinal_plus(x_train: pd.DataFrame, x_test: pd.DataFrame) -> (pd.Data
                 annot=True,
                 annot_kws={'size': 8},
                 cmap="Spectral_r")
-    ###plt.show()
+    plt.show()
     return x_train, x_test
 
 
@@ -380,104 +380,93 @@ data = encode_with_ordinalencoder(data)
 #### 3.5 Remove the id column
 data.drop(columns=['id'], inplace=True)
 #### 4. Normalize the data in the numerical columns
-# data = normalize_data(data)
+data = normalize_data(data)
 #### 5. Split between training and test data
 x_train, x_test, y_train, y_test = split_to_train_and_test(data)
 #### 6. Verify that the split gives similar distributions between train and test on the Ordinal columns
 verify_split(x_train, x_test)
 #### 5. Investigate the correlation of the data
-#show_correlation_heatmap(data)
+show_correlation_heatmap(data)
 #### 7. We see that carat, x, y, z are completely correlated, so we remove x, y & z features
 data = remove_columns(data)
 x_train = remove_columns(x_train)
 x_test = remove_columns(x_test)
 #### 8. Let's see the correlation again
-#show_correlation_heatmap(data)
+show_correlation_heatmap(data)
 #############################################################################################
-# Price and carat are very closely correlated as expected we will try to train for two cases:
-# a. Price
-# b. Price / carat
+# Price and carat are very closely correlated as expected we will also latter
+# try to train for Price / carat
 #############################################################################################
 #### 9. Show Boxplots
-#show_normalized_boxplot(data)
+show_normalized_boxplot(data)
 #### 10. Do a simple linear regression for each column
 linear_regression_for_each_column(x_train, y_train, x_test, y_test)
 #### 11. Do a simple linear regression for all columns
 y_pred = linear_regression(x_train, y_train, x_test, y_test)
 #### 12. Plot regression
-#plot_regression(x_test, y_test, y_pred)
-#### 13. Try PCA NO See Next options
-# x_train, x_test, y_train, y_test = apply_PCA(data)
-# print('Linear regression after PCA:')
-# y_pred = linear_regression(x_train, y_train, x_test, y_test)
-#### 14. Polynomial linear regression for each column
+plot_regression(x_test, y_test, y_pred)
+#### 13. Polynomial linear regression for each column
 polynomial_regression_for_each_column(range(2,3), x_train, y_train, x_test, y_test)
-#### 15. Polynomial linear regression
-#degrees = range(2,8)
-degrees = range(5,7)
-#degrees = range(2,3)
+#### 14. Polynomial linear regression
+degrees = range(2,8)
 polynomial_regression(degrees, x_train, y_train, x_test, y_test)
-# #### 16. Ridge around the best polynomials
-# for degree in range(5,6):
-#     ridge_regression(degree, x_train, y_train, x_test, y_test)
-# #### 17. Lasso around the best polynomials
-# for degree in range(5,6):
-#     lasso_regression(degree, x_train, y_train, x_test, y_test)
-#### 18. Backward Stepwise Polynomial regression
-#backward_stepwise_polynomial_regression(degrees, x_train, y_train, x_test, y_test)
-#### 19. Backward Stepwise Polynomial regression by PCA n_components
-#### Corected below:
-# for n_components in range(5,0, -1):
-#     x_train_pca, x_test_pca, y_train_pca, y_test_pca = apply_PCA(data, n_components)
-#     print("PCA", n_components, ", Ridge, Polynomial Regression")
-#     for degree in range(2, 6):
-#         #ridge_regression(degree, x_train_pca, y_train_pca, x_test_pca, y_test_pca)
-#         pass
+#### 15. Ridge around the best polynomials
+for degree in range(5,6):
+    ridge_regression(degree, x_train, y_train, x_test, y_test)
+#### 16. Lasso around the best polynomials
+for degree in range(5,6):
+    lasso_regression(degree, x_train, y_train, x_test, y_test)
+#### 17. Backward Stepwise Polynomial regression
+backward_stepwise_polynomial_regression(degrees, x_train, y_train, x_test, y_test)
+#### 18. Backward Stepwise Polynomial regression by PCA n_components
 x_train_pca, x_test_pca, y_train_pca, y_test_pca = apply_PCA(data)
 print("PCA, Ridge, Polynomial Regression: Backward Stepwise Polynomial regression")
-backward_stepwise_polynomial_regression(range(2, 6), x_train_pca, y_train_pca, x_test_pca, y_test_pca, x_train_pca.columns.reversed())
-#### 20. NN regression
-#nn_regresion(x_train, y_train, x_test, y_test)
+degrees = range(2,6)
+polynomial_regression(degrees, x_train_pca, y_train_pca, x_test_pca, y_test_pca)
+columns = list(x_train_pca.columns)
+backward_stepwise_polynomial_regression(degrees, x_train_pca, y_train_pca, x_test_pca, y_test_pca, columns)
+#### 19. NN regression
+nn_regresion(x_train, y_train, x_test, y_test)
 #######################################################
-#### Best of class
+#### 20. Best of class
 #### Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']
-# print('------------------------')
-# print("Best of class: Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
-# ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+print('------------------------')
+print("Best of class: Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
+ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 #######################################################
 #### Try additional cases:
-#### Remove outliers
-# x_train = remove_outliers(x_train)
-# y_train = y_train.loc[x_train.index]
-# print('------------------------')
-# print("Best of class: NO OUTLIERS, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
-# ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+#### 21. Remove outliers
+x_train = remove_outliers(x_train)
+y_train = y_train.loc[x_train.index]
+print('------------------------')
+print("Best of class: NO OUTLIERS, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
+ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 #######################################################
 #### Try additional cases
-#### Encode Ordinal features Helmert Encoding
-# data = read_and_preprocess()
-# data.drop(columns=['id'], inplace=True)
-# data = remove_columns(data)
-# data = encode_with_helmertencoding(data)
-# x_train, x_test, y_train, y_test = split_to_train_and_test(data)
-# print('------------------------')
-# print("Best of class: Helmert Encoding, Ridge, Polynomial Regression degree=4['carat', 'cut', 'color', 'clarity', 'table']")
-# ridge_regression(4, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+#### 22. Encode Ordinal features Helmert Encoding
+data = read_and_preprocess()
+data.drop(columns=['id'], inplace=True)
+data = remove_columns(data)
+data = encode_with_helmertencoding(data)
+x_train, x_test, y_train, y_test = split_to_train_and_test(data)
+print('------------------------')
+print("Best of class: Helmert Encoding, Ridge, Polynomial Regression degree=4['carat', 'cut', 'color', 'clarity', 'table']")
+ridge_regression(4, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 #######################################################
 #### Try additional cases
-#### Encode Ordinal features Based on Price/Carat
-# data = read_and_preprocess()
-# data = encode_with_ordinalencoder(data)
-# data.drop(columns=['id'], inplace=True)
-# data = remove_columns(data)
-# x_train, x_test, y_train, y_test = split_to_train_and_test(data)
-# x_train, x_test = encode_ordinal_plus(x_train, x_test)
-# print('------------------------')
-# print("Best of class: Ordinal with Price/Carat, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
-# ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+#### 23. Encode Ordinal features Based on Price/Carat
+data = read_and_preprocess()
+data = encode_with_ordinalencoder(data)
+data.drop(columns=['id'], inplace=True)
+data = remove_columns(data)
+x_train, x_test, y_train, y_test = split_to_train_and_test(data)
+x_train, x_test = encode_ordinal_plus(x_train, x_test)
+print('------------------------')
+print("Best of class: Ordinal with Price/Carat, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
+ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 #######################################################
 #### Try additional cases
-#### Convert price -> price / carat
+#### 24. Convert price -> price / carat
 data = read_and_preprocess()
 data['price'] = data['price']/data['carat']
 data = encode_with_ordinalencoder(data)
@@ -487,5 +476,21 @@ x_train, x_test, y_train, y_test = split_to_train_and_test(data)
 print('------------------------')
 print("Best of class: Price/Carat, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
 ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
-
+print("Best of class: Price/Carat, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']")
+ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+#######################################################
+#### Try additional cases
+#### 25. Convert price -> price / carat, remove 'carat'
+data = read_and_preprocess()
+data['price'] = data['price']/data['carat']
+data = encode_with_ordinalencoder(data)
+data.drop(columns=['id'], inplace=True)
+data = remove_columns(data)
+data.drop(columns=['carat'], inplace=True)
+x_train, x_test, y_train, y_test = split_to_train_and_test(data)
+print('------------------------')
+print("Best of class: Price/Carat, Ridge, Polynomial Regression degree=5['cut', 'color', 'clarity', 'table']")
+ridge_regression(3, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+ridge_regression(4, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 exit(0)
