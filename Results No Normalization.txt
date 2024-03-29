@@ -436,3 +436,36 @@ Ridge Regression degree=4  R2= 0.052595847653300165
 Ridge Regression degree=5 MSE= 3774797.8 (* Mean Square Error)
 Ridge Regression degree=5 MAE= 1477.69 (* Mean Absolute Error)
 Ridge Regression degree=5  R2= 0.03216796607461625
+======================================
+Randomize split
+======================================
+Ridge Regression 5 MSE= 405632.33
+Ridge Regression 5 MAE= 344.67
+Ridge Regression 5  R2= 0.9754467829071857
+Ridge Regression 5 MSE= 387014.69
+Ridge Regression 5 MAE= 336.54
+Ridge Regression 5  R2= 0.9760509854869565
+Ridge Regression 5 MSE= 399914.18
+Ridge Regression 5 MAE= 341.82
+Ridge Regression 5  R2= 0.975359168439635
+Ridge Regression 5 MSE= 406369.67
+Ridge Regression 5 MAE= 341.04
+Ridge Regression 5  R2= 0.9754379300879235
+Ridge Regression 5 MSE= 392889.58
+Ridge Regression 5 MAE= 338.46
+Ridge Regression 5  R2= 0.9756344838333285
+Ridge Regression 5 MSE= 387101.25
+Ridge Regression 5 MAE= 338.74
+Ridge Regression 5  R2= 0.9760472255504256
+Ridge Regression 5 MSE= 436263.27
+Ridge Regression 5 MAE= 338.34
+Ridge Regression 5  R2= 0.973177935907523
+Ridge Regression 5 MSE= 448868.78
+Ridge Regression 5 MAE= 334.32
+Ridge Regression 5  R2= 0.9724441211879458
+Ridge Regression 5 MSE= 377836.69
+Ridge Regression 5 MAE= 337.64
+Ridge Regression 5  R2= 0.9766658261903721
+Ridge Regression 5 MSE= 374453.26
+Ridge Regression 5 MAE= 337.66
+Ridge Regression 5  R2= 0.9771982830720356

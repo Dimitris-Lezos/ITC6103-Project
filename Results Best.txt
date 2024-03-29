@@ -77,4 +77,13 @@ Ridge Regression degree=5  R2= 0.9746155332487699
 Polynomial Regression degree=5 MSE= 391992.08 (* Mean Square Error)
 Polynomial Regression degree=5 MAE= 338.32 (* Mean Absolute Error)
 Polynomial Regression degree=5  R2= 0.9757414335136121
-
+======================================
+Randomize split averages
+======================================
+Ridge Regression 5 MSE	401634.3700000000000000
+Ridge Regression 5 MAE	338.9230000000000000
+Ridge Regression 5  R2	0.9753462742663330
+-------------------------------------------	
+Polynomial Regression 6 MSE	392103.6660000000000000
+Polynomial Regression 6 MAE	335.1320000000000000
+Polynomial Regression 6  R2	0.9759327027540970

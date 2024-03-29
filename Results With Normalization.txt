@@ -343,3 +343,40 @@ Ridge Regression degree=4  R2= 0.052595847653300165
 Ridge Regression degree=5 MSE= 3774797.8 (* Mean Square Error)
 Ridge Regression degree=5 MAE= 1477.69 (* Mean Absolute Error)
 Ridge Regression degree=5  R2= 0.03216796607461625
+------------------------
+Neural Network Regression MSE= 625164.62 (* Mean Square Error)
+Neural Network Regression MAE= 409.77 (* Mean Absolute Error)
+Neural Network Regression  R2= 0.9613114693183591
+======================================
+Randomize split
+======================================
+Polynomial Regression 6 MSE= 392043.3
+Polynomial Regression 6 MAE= 339.19
+Polynomial Regression 6  R2= 0.9762693366175639
+Polynomial Regression 6 MSE= 380020.96
+Polynomial Regression 6 MAE= 332.17
+Polynomial Regression 6  R2= 0.9764837671111412
+Polynomial Regression 6 MSE= 396490.59
+Polynomial Regression 6 MAE= 336.66
+Polynomial Regression 6  R2= 0.9755701141750216
+Polynomial Regression 6 MSE= 412458.62
+Polynomial Regression 6 MAE= 338.76
+Polynomial Regression 6  R2= 0.9750698973353751
+Polynomial Regression 6 MSE= 380410.02
+Polynomial Regression 6 MAE= 333.54
+Polynomial Regression 6  R2= 0.9764084187009551
+Polynomial Regression 6 MSE= 377942.05
+Polynomial Regression 6 MAE= 333.92
+Polynomial Regression 6  R2= 0.9766139721855172
+Polynomial Regression 6 MSE= 414359.99
+Polynomial Regression 6 MAE= 336.84
+Polynomial Regression 6  R2= 0.9745245799693442
+Polynomial Regression 6 MSE= 429651.42
+Polynomial Regression 6 MAE= 334.08
+Polynomial Regression 6  R2= 0.9736238670427224
+Polynomial Regression 6 MSE= 368483.35
+Polynomial Regression 6 MAE= 332.99
+Polynomial Regression 6  R2= 0.9772434631383241
+Polynomial Regression 6 MSE= 369176.36
+Polynomial Regression 6 MAE= 333.17
+Polynomial Regression 6  R2= 0.9775196112650097

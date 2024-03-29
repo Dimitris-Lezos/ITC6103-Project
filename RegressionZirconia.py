@@ -1,3 +1,5 @@
+import random
+
 import numpy as np
 import seaborn as sns
 from matplotlib import pyplot as plt
@@ -75,14 +77,14 @@ def normalize_data(data: pd.DataFrame) -> pd.DataFrame:
     return data
 
 
-def split_to_train_and_test(data: pd.DataFrame, target=None) -> (pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame):
+def split_to_train_and_test(data: pd.DataFrame, target=None, random_state=42) -> (pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame):
     if target is None:
         target = data.iloc[:, -1:]
         data = data.iloc[:, :-1]
     x_train, x_test, y_train, y_test = train_test_split(data,
                                                         target,
                                                         test_size=0.3,
-                                                        random_state=42)
+                                                        random_state=random_state)
     return x_train, x_test, y_train, y_test
 
 
@@ -384,7 +386,7 @@ data = normalize_data(data)
 #### 5. Split between training and test data
 x_train, x_test, y_train, y_test = split_to_train_and_test(data)
 #### 6. Verify that the split gives similar distributions between train and test on the Ordinal columns
-verify_split(x_train, x_test)
+verify_split(x_train, x_test, show_plots=True)
 #### 5. Investigate the correlation of the data
 show_correlation_heatmap(data)
 #### 7. We see that carat, x, y, z are completely correlated, so we remove x, y & z features
@@ -411,10 +413,10 @@ polynomial_regression_for_each_column(range(2,3), x_train, y_train, x_test, y_te
 degrees = range(2,8)
 polynomial_regression(degrees, x_train, y_train, x_test, y_test)
 #### 15. Ridge around the best polynomials
-for degree in range(5,6):
+for degree in range(2,6):
     ridge_regression(degree, x_train, y_train, x_test, y_test)
 #### 16. Lasso around the best polynomials
-for degree in range(5,6):
+for degree in range(2,6):
     lasso_regression(degree, x_train, y_train, x_test, y_test)
 #### 17. Backward Stepwise Polynomial regression
 backward_stepwise_polynomial_regression(degrees, x_train, y_train, x_test, y_test)
@@ -493,4 +495,25 @@ print("Best of class: Price/Carat, Ridge, Polynomial Regression degree=5['cut', 
 ridge_regression(3, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 ridge_regression(4, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+#######################################################
+#### Verify Best Results with other splits
+####
+for n in [4033234345, 2270196945, 2084006233, 3245149790, 2568624065, 245629106, 4291163709, 2388055995, 743943979, 119627208]:
+    data = read_and_preprocess()
+    data = encode_with_ordinalencoder(data)
+    data.drop(columns=['id'], inplace=True)
+    data = remove_columns(data)
+    data = normalize_data(data)
+    #### 5. Split between training and test data
+    x_train, x_test, y_train, y_test = split_to_train_and_test(data, random_state=n)
+    polynomial_regression(range(6,7), x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
+for n in [4033234345, 2270196945, 2084006233, 3245149790, 2568624065, 245629106, 4291163709, 2388055995, 743943979, 119627208]:
+    data = read_and_preprocess()
+    data = encode_with_ordinalencoder(data)
+    data.drop(columns=['id'], inplace=True)
+    data = remove_columns(data)
+    #data = normalize_data(data)
+    #### 5. Split between training and test data
+    x_train, x_test, y_train, y_test = split_to_train_and_test(data, random_state=n)
+    ridge_regression(5, x_train.drop(columns=['depth']), y_train, x_test.drop(columns=['depth']), y_test)
 exit(0)
