@@ -1,0 +1,181 @@
+﻿Normalized,Model,R2,MSE,MAE
+0,Linear Regression column 'carat' ,0.889265606,1789347,946
+0,Linear Regression column 'cut',0.007526345,16037296,3041
+0,Linear Regression column 'color' ,0.044814255,15434764,2961
+0,Linear Regression column 'clarity',0.03281914,15628592,2952
+0,Linear Regression column 'depth',-0.000034842,16159476,3067
+0,Linear Regression column 'table',0.030648561,15663666,2987
+0,Linear Regression,0.924825275,1214742,809
+0,Polynomial Regression degree=2 column 'carat' ,0.903507981,1559206,756
+0,Polynomial Regression degree=2 column 'cut' ,0.013602264,15939116,3016
+0,Polynomial Regression degree=2 column 'color' ,0.045747756,15419679,2960
+0,Polynomial Regression degree=2 column 'clarity' ,0.032932355,15626762,2951
+0,Polynomial Regression degree=2 column 'depth' ,0.002564612,16117472,3062
+0,Polynomial Regression degree=2 column 'table' ,0.034199744,15606283,2970
+0,Polynomial Regression degree=2 ,0.964061538,580727,471
+0,Polynomial Regression degree=3 ,0.973457798,428893,366
+0,Polynomial Regression degree=4 ,0.975006852,403862,348
+0,Polynomial Regression degree=5 ,0.975747319,391897,338
+0,Polynomial Regression degree=6 ,0.97272997,440654,337
+0,Polynomial Regression degree=7 ,0.87524014,2015984,340
+0,"Polynomial Regression degree=2 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.963923707,582954,471
+0,"Polynomial Regression degree=3 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.973354119,430568,367
+0,"Polynomial Regression degree=4 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.97495852,404643,348
+0,"Polynomial Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.975995319,387890,338
+0,"Polynomial Regression degree=6 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.975386397,397729,334
+0,"Polynomial Regression degree=7 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.97496705,404505,328
+0,"Polynomial Regression degree=2 columns ['carat', 'color', 'clarity', 'table'] ",0.96321811,594355,475
+0,"Polynomial Regression degree=3 columns ['carat', 'color', 'clarity', 'table'] ",0.972686934,441349,371
+0,"Polynomial Regression degree=4 columns ['carat', 'color', 'clarity', 'table'] ",0.974075778,418907,353
+0,"Polynomial Regression degree=5 columns ['carat', 'color', 'clarity', 'table'] ",0.973994492,420221,346
+0,"Polynomial Regression degree=6 columns ['carat', 'color', 'clarity', 'table'] ",0.973125784,434258,338
+0,"Polynomial Regression degree=7 columns ['carat', 'color', 'clarity', 'table'] ",0.965014997,565320,334
+0,"Polynomial Regression degree=2 columns ['carat', 'color', 'clarity'] ",0.962905296,599410,477
+0,"Polynomial Regression degree=3 columns ['carat', 'color', 'clarity'] ",0.972414459,445752,373
+0,"Polynomial Regression degree=4 columns ['carat', 'color', 'clarity'] ",0.973947252,420984,355
+0,"Polynomial Regression degree=5 columns ['carat', 'color', 'clarity'] ",0.975097489,402398,347
+0,"Polynomial Regression degree=6 columns ['carat', 'color', 'clarity'] ",0.975915686,389176,339
+0,"Polynomial Regression degree=7 columns ['carat', 'color', 'clarity'] ",0.973777013,423735,333
+0,"Polynomial Regression degree=2 columns ['carat', 'color'] ",0.918292102,1320311,709
+0,"Polynomial Regression degree=3 columns ['carat', 'color'] ",0.930808591,1118058,623
+0,"Polynomial Regression degree=4 columns ['carat', 'color'] ",0.931995862,1098873,614
+0,"Polynomial Regression degree=5 columns ['carat', 'color'] ",0.933789049,1069897,599
+0,"Polynomial Regression degree=6 columns ['carat', 'color'] ",0.934660158,1055821,593
+0,"Polynomial Regression degree=7 columns ['carat', 'color'] ",0.935200659,1047087,586
+0,Polynomial Regression degree=2 columns ['carat'] ,0.903507981,1559206,756
+0,Polynomial Regression degree=3 columns ['carat'] ,0.914129375,1387576,688
+0,Polynomial Regression degree=4 columns ['carat'] ,0.914231637,1385924,685
+0,Polynomial Regression degree=5 columns ['carat'] ,0.914814484,1376505,677
+0,Polynomial Regression degree=6 columns ['carat'] ,0.914837062,1376141,677
+0,Polynomial Regression degree=7 columns ['carat'] ,0.914878097,1375477,677
+0,Neural Network Regression ,0.960571489,637122,423
+0,Ridge Regression degree=2 ,0.964062338,580713,470
+0,Ridge Regression degree=3 ,0.973437771,429216,366
+0,Ridge Regression degree=4 ,0.97494912,404795,347
+0,Ridge Regression degree=5,0.963905098,583254,472
+0,Lasso Regression degree=2 ,0.963905098,406127,349
+0,Lasso Regression degree=3,0.976027437,387371,338
+0,Lasso Regression degree=4 ,0.974168285,417412,361
+0,Lasso Regression degree=5 ,0.972086786,451047,342
+0,Polynomial Regression degree=2 PCA,0.964061538,580727,471
+0,Polynomial Regression degree=3 PCA,0.973457798,428893,366
+0,Polynomial Regression degree=4 PCA,0.975006852,403862,348
+0,Polynomial Regression degree=5 PCA,0.975741434,391992,338
+0,"Polynomial Regression degree=2 PCA components [1, 2, 3, 4, 5] ",0.927691998,1168419,780
+0,"Polynomial Regression degree=3 PCA components [1, 2, 3, 4, 5] ",0.942121646,935251,659
+0,"Polynomial Regression degree=4 PCA components [1, 2, 3, 4, 5] ",0.948605159,830485,623
+0,"Polynomial Regression degree=5 PCA components [1, 2, 3, 4, 5] ",0.780571507,3545726,615
+0,"Polynomial Regression degree=2 PCA components [2, 3, 4, 5] ",0.908874319,1472492,895
+0,"Polynomial Regression degree=3 PCA components [2, 3, 4, 5] ",0.92193487,1261448,790
+0,"Polynomial Regression degree=4 PCA components [2, 3, 4, 5] ",0.929141437,1144997,758
+0,"Polynomial Regression degree=5 PCA components [2, 3, 4, 5] ",0.801857635,3201765,753
+0,"Polynomial Regression degree=2PCA components [3, 4, 5] ",0.880945691,1923788,1038
+0,"Polynomial Regression degree=3 PCA components [3, 4, 5] ",0.891309432,1756321,984
+0,"Polynomial Regression degree=4 PCA components [3, 4, 5] ",0.899298691,1627224,951
+0,"Polynomial Regression degree=5 PCA components [3, 4, 5] ",0.814886368,2991235,944
+0,"Polynomial Regression degree=2 PCA components [4, 5] ",0.877038993,1986916,1057
+0,"Polynomial Regression degree=3 PCA components [4, 5] ",0.882380079,1900610,1025
+0,"Polynomial Regression degree=4 PCA components [4, 5] ",0.883531452,1882005,1010
+0,"Polynomial Regression degree=5 PCA components [4, 5] ",0.869493065,2108850,1014
+0,Polynomial Regression degree=2 PCA components [5] ,0.872570117,2059128,1075
+0,Polynomial Regression degree=3 PCA components [5] ,0.879619706,1945215,1043
+0,Polynomial Regression degree=4 PCA components [5] ,0.884646418,1863989,1030
+0,Polynomial Regression degree=5 PCA components [5] ,0.885311811,1853237,1034
+0,"Best of class Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.976027436,387371,338
+0,"No outliers Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.974615533,410185,351
+0,"Helmert Ordinal Encoding Ridge, Regression degree=4 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.972086786,451047,342
+0,"Normalized Ordinal with Price/Carat Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.932209878,1095415,640
+0,"Price/Carat prediction Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.928233308,279909,347
+0,"Price/Carat prediction Ridge, Regression degree=3 columns ['cut', 'color', 'clarity', 'table']",0.044714987,3725861,1487
+0,"Price/Carat prediction Ridge, Regression degree=4 columns ['cut', 'color', 'clarity', 'table']",0.052595848,3695124,1482
+0,"Price/Carat prediction Ridge, Regression degree=5 columns ['cut', 'color', 'clarity', 'table']",0.032167966,374798,1478
+1,Linear Regression column 'carat' ,0.889265606,1789347,946
+1,Linear Regression column 'cut',0.007526345,16037296,3041
+1,Linear Regression column 'color' ,0.044814255,15434764,2961
+1,Linear Regression column 'clarity',0.03281914,15628592,2952
+1,Linear Regression column 'depth',-0.000034842,16159476,3067
+1,Linear Regression column 'table',0.030648561,15663666,2987
+1,Linear Regression,0.924825275,1214742,809
+1,Polynomial Regression degree=2 column 'carat' ,0.903507981,1559206,756
+1,Polynomial Regression degree=2 column 'cut' ,0.013602264,15939116,3016
+1,Polynomial Regression degree=2 column 'color' ,0.045747756,15419679,2960
+1,Polynomial Regression degree=2 column 'clarity' ,0.032932355,15626762,2951
+1,Polynomial Regression degree=2 column 'depth' ,0.002564612,16117472,3062
+1,Polynomial Regression degree=2 column 'table' ,0.034199744,15606283,2970
+1,Polynomial Regression degree=2 ,0.964061537,580726,471
+1,Polynomial Regression degree=3 ,0.973457797,428893,366
+1,Polynomial Regression degree=4 ,0.975006852,403862,348
+1,Polynomial Regression degree=5 ,0.975634559,393719,339
+1,Polynomial Regression degree=6 ,0.92386939,1230188,341
+1,Polynomial Regression degree=7 ,-2.329052573,53793872,371
+1,"Polynomial Regression degree=2 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.963923706,582954,471
+1,"Polynomial Regression degree=3 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.973354119,430568,367
+1,"Polynomial Regression degree=4 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.974958519,404643,348
+1,"Polynomial Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.975995449,387887,338
+1,"Polynomial Regression degree=6 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.976631223,377614,333
+1,"Polynomial Regression degree=7 columns ['carat', 'cut', 'color', 'clarity', 'table'] ",0.223325186,12550221,345
+1,"Polynomial Regression degree=2 columns ['carat', 'color', 'clarity', 'table'] ",0.963218109,594355,475
+1,"Polynomial Regression degree=3 columns ['carat', 'color', 'clarity', 'table'] ",0.972686934,441349,371
+1,"Polynomial Regression degree=4 columns ['carat', 'color', 'clarity', 'table'] ",0.974075778,418907,353
+1,"Polynomial Regression degree=5 columns ['carat', 'color', 'clarity', 'table'] ",0.974015779,419877,346
+1,"Polynomial Regression degree=6 columns ['carat', 'color', 'clarity', 'table'] ",0.956173856,708183,340
+1,"Polynomial Regression degree=7 columns ['carat', 'color', 'clarity', 'table'] ",0.728748253,4383133,341
+1,"Polynomial Regression degree=2 columns ['carat', 'color', 'clarity'] ",0.962905295,599410,477
+1,"Polynomial Regression degree=3 columns ['carat', 'color', 'clarity'] ",0.972414458,445752,373
+1,"Polynomial Regression degree=4 columns ['carat', 'color', 'clarity'] ",0.973947251,420984,355
+1,"Polynomial Regression degree=5 columns ['carat', 'color', 'clarity'] ",0.975097489,402398,347
+1,"Polynomial Regression degree=6 columns ['carat', 'color', 'clarity'] ",0.975915686,389176,339
+1,"Polynomial Regression degree=7 columns ['carat', 'color', 'clarity'] ",0.973777013,423735,333
+1,"Polynomial Regression degree=2 columns ['carat', 'color'] ",0.918292102,1320311,709
+1,"Polynomial Regression degree=3 columns ['carat', 'color'] ",0.930808591,1118058,623
+1,"Polynomial Regression degree=4 columns ['carat', 'color'] ",0.931995862,1098873,614
+1,"Polynomial Regression degree=5 columns ['carat', 'color'] ",0.933789049,1069897,599
+1,"Polynomial Regression degree=6 columns ['carat', 'color'] ",0.934660158,1055821,593
+1,"Polynomial Regression degree=7 columns ['carat', 'color'] ",0.935200659,1047087,586
+1,Polynomial Regression degree=2 columns ['carat'] ,0.903507981,1559206,756
+1,Polynomial Regression degree=3 columns ['carat'] ,0.914129375,1387576,688
+1,Polynomial Regression degree=4 columns ['carat'] ,0.914231638,1385924,685
+1,Polynomial Regression degree=5 columns ['carat'] ,0.914814484,1376505,677
+1,Polynomial Regression degree=6 columns ['carat'] ,0.914837062,1376141,677
+1,Polynomial Regression degree=7 columns ['carat'] ,0.914878097,1375477,677
+1,Neural Network Regression ,0.961311469,625165,410
+1,Ridge Regression degree=2 ,0.964056228,580812,471
+1,Ridge Regression degree=3 ,0.973414628,429591,364
+1,Ridge Regression degree=4 ,0.974148257,417736,356
+1,Ridge Regression degree=5,0.974687754,409018,350
+1,Lasso Regression degree=2 ,0.963943796,582629,471
+1,Lasso Regression degree=3,0.972849229,438727,364
+1,Lasso Regression degree=4 ,0.973456834,428909,363
+1,Lasso Regression degree=5 ,0.973656974,425675,363
+1,Polynomial Regression degree=2 PCA,0.964061538,580727,471
+1,Polynomial Regression degree=3 PCA,0.973457798,428893,366
+1,Polynomial Regression degree=4 PCA,0.975006852,403862,348
+1,Polynomial Regression degree=5 PCA,0.975741434,391992,338
+1,"Polynomial Regression degree=2 PCA components [1, 2, 3, 4, 5] ",0.90285409,1569772,957
+1,"Polynomial Regression degree=3 PCA components [1, 2, 3, 4, 5] ",0.919606155,1299077,836
+1,"Polynomial Regression degree=4 PCA components [1, 2, 3, 4, 5] ",0.928989005,1147461,769
+1,"Polynomial Regression degree=5 PCA components [1, 2, 3, 4, 5] ",0.927251738,1175533,722
+1,"Polynomial Regression degree=2 PCA components [2, 3, 4, 5] ",0.880746465,1927008,1048
+1,"Polynomial Regression degree=3 PCA components [2, 3, 4, 5] ",0.890088132,1776056,993
+1,"Polynomial Regression degree=4 PCA components [2, 3, 4, 5] ",0.874890615,2021632,955
+1,"Polynomial Regression degree=5 PCA components [2, 3, 4, 5] ",0.827005567,2795402,949
+1,"Polynomial Regression degree=2PCA components [3, 4, 5] ",0.810487433,3062317,1314
+1,"Polynomial Regression degree=3 PCA components [3, 4, 5] ",0.811920384,3039162,1310
+1,"Polynomial Regression degree=4 PCA components [3, 4, 5] ",0.805860714,3137080,1293
+1,"Polynomial Regression degree=5 PCA components [3, 4, 5] ",0.822044592,2875566,1292
+1,"Polynomial Regression degree=2 PCA components [4, 5] ",0.006226296,16058303,3057
+1,"Polynomial Regression degree=3 PCA components [4, 5] ",0.006769061,16049533,3056
+1,"Polynomial Regression degree=4 PCA components [4, 5] ",0.006364917,16056063,3053
+1,"Polynomial Regression degree=5 PCA components [4, 5] ",0.007216608,16042301,3051
+1,Polynomial Regression degree=2 PCA components [5] ,0.001450225,16135479,3066
+1,Polynomial Regression degree=3 PCA components [5] ,0.001605379,16132972,3066
+1,Polynomial Regression degree=4 PCA components [5] ,-0.055278393,17052152,3069
+1,Polynomial Regression degree=5 PCA components [5] ,-0.003150333,16209819,3065
+1,"Best of class Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.974618755,410133,350
+1,"No outliers Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.974615533,410185,351
+1,"Helmert Ordinal Encoding Ridge, Regression degree=4 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.972086786,451047,342
+1,"Normalized Ordinal with Price/Carat Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.932209878,1095415,640
+1,"Price/Carat prediction Ridge, Regression degree=5 columns ['carat', 'cut', 'color', 'clarity', 'table']",0.928233307,279909,247
+1,"Price/Carat prediction Ridge, Regression degree=3 columns ['cut', 'color', 'clarity', 'table']",0.044714986,3725861,1487
+1,"Price/Carat prediction Ridge, Regression degree=4 columns ['cut', 'color', 'clarity', 'table']",0.052595847,3695124,1482
+1,"Price/Carat prediction Ridge, Regression degree=5 columns ['cut', 'color', 'clarity', 'table']",0.032167966,3774798,1478
