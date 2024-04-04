@@ -1,0 +1,89 @@
+NO NORMALIZATION
+================
+Linear Regression column 'carat' MSE= 1789347.48 (* Mean Square Error)
+Linear Regression column 'carat' MAE= 946.39 (* Mean Absolute Error)
+Linear Regression column 'carat'  R2= 0.8892656060475708
+------------------------
+Polynomial Regression degree=2 column 'carat' MSE= 1559206.18 (* Mean Square Error)
+Polynomial Regression degree=2 column 'carat' MAE= 755.83 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'carat'  R2= 0.9035079808668178
+------------------------
+Linear Regression MSE= 1214741.88 (* Mean Square Error)
+Linear Regression MAE= 808.84 (* Mean Absolute Error)
+Linear Regression  R2= 0.9248252745560208
+------------------------
+Polynomial Regression degree=5 MSE= 391896.98 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.41 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9757473186729442
+------------------------
+Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table'] MSE= 387889.55 (* Mean Square Error)
+Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table'] MAE= 338.35 (* Mean Absolute Error)
+Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.975995319428491
+------------------------
+Ridge Regression degree=5 MSE= 387669.94 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 337.78 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9760089104575306
+------------------------
+Best of class: Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']
+Ridge Regression degree=5 MSE= 387370.57 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 338.29 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9760274368062535
+------------------------
+Polynomial Regression degree=5 MSE= 391992.08 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.32 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9757414335135339
+==================
+WITH NORMALIZATION
+==================
+Linear Regression column 'carat' MSE= 1789347.48 (* Mean Square Error)
+Linear Regression column 'carat' MAE= 946.39 (* Mean Absolute Error)
+Linear Regression column 'carat'  R2= 0.8892656060475704
+------------------------
+Polynomial Regression degree=2 column 'carat' MSE= 1559206.18 (* Mean Square Error)
+Polynomial Regression degree=2 column 'carat' MAE= 755.83 (* Mean Absolute Error)
+Polynomial Regression degree=2 column 'carat'  R2= 0.9035079808668154
+------------------------
+Linear Regression MSE= 1214741.88 (* Mean Square Error)
+Linear Regression MAE= 808.84 (* Mean Absolute Error)
+Linear Regression  R2= 0.9248252745560204
+------------------------
+Polynomial Regression degree=5 MSE= 393719.05 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.79 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9756345593626947
+------------------------
+Polynomial Regression degree=6['carat', 'cut', 'color', 'clarity', 'table'] MSE= 377614.05 (* Mean Square Error)
+Polynomial Regression degree=6['carat', 'cut', 'color', 'clarity', 'table'] MAE= 333.44 (* Mean Absolute Error)
+Polynomial Regression degree=6['carat', 'cut', 'color', 'clarity', 'table']  R2= 0.9766312226403805
+------------------------
+Ridge Regression degree=5 MSE= 409018.38 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 349.66 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9746877544326938
+------------------------
+Ridge Regression degree=9 MSE= 391940.23 (* Mean Square Error)
+Ridge Regression degree=9 MAE= 337.38 (* Mean Absolute Error)
+Ridge Regression degree=9  R2= 0.9757446418117756
+------------------------
+Best of class: Ridge, Polynomial Regression degree=12['carat', 'cut', 'color', 'clarity', 'table']
+Ridge Regression degree=12 MSE= 389494.71 (* Mean Square Error)
+Ridge Regression degree=12 MAE= 337.21 (* Mean Absolute Error)
+Ridge Regression degree=12  R2= 0.9758959837552864
+------------------------
+Best of class: NO OUTLIERS, Ridge, Polynomial Regression degree=5['carat', 'cut', 'color', 'clarity', 'table']
+------------------------
+Ridge Regression degree=5 MSE= 410185.4 (* Mean Square Error)
+Ridge Regression degree=5 MAE= 350.6 (* Mean Absolute Error)
+Ridge Regression degree=5  R2= 0.9746155332487699
+------------------------
+Polynomial Regression degree=5 MSE= 391992.08 (* Mean Square Error)
+Polynomial Regression degree=5 MAE= 338.32 (* Mean Absolute Error)
+Polynomial Regression degree=5  R2= 0.9757414335136121
+======================================
+Randomize split averages
+======================================
+Ridge Regression 5 MSE	401634.3700000000000000
+Ridge Regression 5 MAE	338.9230000000000000
+Ridge Regression 5  R2	0.9753462742663330
+-------------------------------------------	
+Polynomial Regression 6 MSE	392103.6660000000000000
+Polynomial Regression 6 MAE	335.1320000000000000
+Polynomial Regression 6  R2	0.9759327027540970
